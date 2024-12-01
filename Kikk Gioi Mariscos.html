@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kikk Gioi Mariscos</title>
+    <link rel="stylesheet" href="Kikk%20Gioi%20Mariscos%20Archivos/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo principal.png">Kikk Gio Mariscos</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>¡Del mar a tu mesa con frescura y calidad inigualable!</h1>
+            <button onclick="location.href='#productos'">Ver Productos</button>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="galeria">
+                <img src="Kikk%20Gioi%20Mariscos%20Archivos/mariscos1.jpg" alt="Camarones frescos">
+                <img src="Kikk%20Gioi%20Mariscos%20Archivos/mariscos2.jpg" alt="Ostras frescas">
+                <img src="Kikk%20Gioi%20Mariscos%20Archivos/mariscos3.jpg" alt="Pulpos frescos">
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>En Kikk Gioi Mariscos, ofrecemos mariscos de la más alta 
+calidad, directamente del mar a tu mesa. Con una pasión por lo fresco y 
+el compromiso con nuestros clientes, trabajamos arduamente para 
+garantizar una experiencia única.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required="">
+                <input type="email" placeholder="Correo Electrónico" required="">
+                <textarea placeholder="Tu mensaje" required=""></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="info">
+                <p>Teléfono: 123-456-7890</p>
+                <p>Correo: contacto@kikkgioimariscos.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Kikk Gioi Mariscos. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
